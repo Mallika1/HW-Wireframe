@@ -1,4 +1,6 @@
+/* css style sheet for index.html */
 * {
+    /* border box to get all the box same size including padding */
     box-sizing: border-box;
     text-align: center;
   }
@@ -8,14 +10,11 @@ body{
    background:#777;
    color:#777;
    font-size: 18px;
-  
-  
 }
-
+/* container styles */
 #container{
     margin:auto;
     width:960px;
-
 }
 
 header{
@@ -28,14 +27,16 @@ nav{
     padding:20px;
     margin-bottom:20px;
 }
-
+/* left panel styles */
 #main
 {
     width:495px; 
     background-color: #ebebeb;
     padding:20px;
+    /* left panel floats left */
     float:left;
     margin-bottom:20px;
+    overflow:auto;
 }
 article{
     background: #777;
@@ -43,6 +44,7 @@ article{
     padding:10px;
     color:white;
 }
+/* style for h1 and p tag */
 h1,p{
     background-color:#ebebeb;
     color:#777;
@@ -50,6 +52,7 @@ h1,p{
 }
 
 aside{
+    /* aside section floats right */
     float:right;
     width:450px;
     padding:20px;
@@ -58,8 +61,7 @@ aside{
     margin-bottom:20px;
 }
 footer{
-
-  
+    /* clear the float so that footer stays at its place */
     clear:both;
     padding:20px;
     background-color:#ebebeb;
